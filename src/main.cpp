@@ -37,7 +37,18 @@ struct Export
 
 static const std::unordered_set<std::string> Intrinsics // Known disallowed function names in MSVC
 {
+	"__std_terminate",
+	"__CxxDetectRethrow",
+	"__CxxExceptionFilter",
+	"__CxxQueryExceptionSize",
+	"__CxxRegisterExceptionObject",
+	"__CxxUnregisterExceptionObject",
+	"__RTCastToVoid",
+	"__RTDynamicCast",
+	"__RTtypeid",
 	"_abnormal_termination",
+	"_CxxThrowException",
+	"_purecall",
 	"_setjmp",
 	"_setjmpex",
 	"atexit"
